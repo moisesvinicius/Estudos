@@ -1,0 +1,23 @@
+body{
+padding: 0;
+margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: auto;
+    padding: 3px 4%;
+    text-align: center;
+    background-color: gray;
+}
+
+#item1, #item2, #item3,#item4,#item5,#item6,#item7,#item8,#item9,#item10{
+    background-color: rgb(211, 250, 250);
+    width: 100px;
+    height: 120px;
+    margin: 10px;
+}
+
+

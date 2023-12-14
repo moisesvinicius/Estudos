@@ -1,0 +1,111 @@
+
+body{
+    background-color: aquamarine;
+}
+
+.boneco-bola{
+    display: flex;
+    margin: auto;
+    background-color: bisque;
+    border-radius: 50%;
+    width: 350px;
+    height: 220px;
+    padding: 20px;
+    position: relative;
+    top: 120px;
+}
+
+.bola{
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 120px;
+}
+
+.olho{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(255, 252, 252);
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+
+.boca{
+    display: flex;
+    width: 60px;
+    height: 30px;
+    border-radius: 34px;
+    background-color: rgb(226, 140, 140);
+    padding: 5px 30px;
+    position: relative;
+    bottom: -150px;
+    right: 90px;
+}
+
+.denter{
+    margin: 0px 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    top: -5px;
+    right: 14px;
+    padding: 4px 7px;
+}
+
+#ouro{
+    background: gold;
+}
+
+.div-pulsar{
+    margin: auto;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: black;
+    color:white;
+    position: relative;
+    top: 130px;
+    padding: 1px 100px;
+    box-shadow: 2px 4px 7px green;
+    cursor: pointer;
+    animation: pulsar 2s infinite ease-in-out;
+}
+
+/*Div pulsa animation*/
+
+@keyframes pulsar {
+    0% {
+      transform: scale(1);
+   }
+    50% {
+      transform: scale(1.05);
+   }
+    100% {
+      transform: scale(1);
+   }
+  }
+
+
+/*Animação boneco-bola*/
+
+@keyframes pular {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+   }
+    40% {
+      transform: translateY(-30px);
+   }
+    60% {
+      transform: translateY(-15px);
+   }
+  }
+  
+  .boneco-bola {
+   /* Outras propriedades do boneco bola */
+   animation: pular 2s infinite;
+  }
